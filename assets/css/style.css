@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.about-us, .faq, .cta, .privacy-policy {
+  background-color: #060606;
+  
+}
+
+ul li {
+  list-style: none;
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+}
+
+.ornament-circle-lg {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(204.29deg, rgba(72, 39, 97, 0.5) 85.04%, rgba(72, 39, 97, 0.5) 85.04%);
+  backdrop-filter: blur(362.8999938964844px);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: -23rem;
+  transform: translateX(-50%);
+}
+
+.border-semidark {
+  border-color: #777777 !important;
+}
+
+.text-semidark {
+  color: #d8d8d8;
+}
+
+.text-gray-dark {
+  color: #A4A4A4;
+}
+
+.bg-purple {
+  background-color: #636FE9;
+}
+
+.text-gray-light {
+  color: #EBEBEB;
+}
+
+.navbar-btn {
+  font-size: 12px;
+}
+
+.navbar-nav {
+  margin-right: -70px;
+}
+
+.banner {
+  background-image: url("./../img/banner.png");
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+}
+
+.banner-dots {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  right: 0;
+  bottom: 18px;
+  transform: translateX(-143px);
+  box-shadow: rgba(255, 255, 255, 1) 0px 1px 20px 4px;
+}
+
+.banner-title {
+  position: relative;
+}
+.banner-title h1 {
+  font-size: 145px;
+  text-wrap: nowrap;
+  text-align: center;
+  background: -webkit-linear-gradient(0deg, #17121C 6.46%, #FFFFFF 52.28%, #170923 93.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-btn {
+  align-self: center;
+  width: 350px;
+  text-align: center;
+  background-color: rgba(99, 111, 233, 1);
+  margin-left: -45px;
+}
+
+.ornament-left {
+  left: 0;
+  bottom: 10px;
+  transform: translateX(133px);
+  width: 21%;
+}
+
+.ornament-right {
+  transform: translateX(-152px);
+  right: 0;
+  top: 40px;
+  width: 204px;
+}
+
+.banner-desc {
+  width: 580px;
+  margin: auto;
+  text-align: center;
+  line-height: 33px;
+  font-size: 16px;
+}
+
+.banner-grow {
+  width: 150px;
+  height: 100px;
+}
+
+.divider-first {
+  background-color: #242323;
+  height: 86px;
+  margin-left: -20px;
+  width: 102vw;
+  overflow: hidden;
+  transform: rotate(8.5deg) skew(8.5deg);
+}
+
+.divider-first > div{
+  transform: skew(-8.5deg);
+}
+
+.divider-second {
+  background-color: #242323;
+  height: 86px;
+  margin-left: -20px;
+  width: 102vw;
+  overflow: hidden;
+  transform: rotate(-8.5deg) skew(-8.5deg);
+  margin-top: -50px;
+}
+
+.divider-second > div{
+  transform: skew(8.5deg);
+}
+
+.divider-linear {
+  height: 361px;
+  margin-top: -251px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 39.16%);
+}
+
+.about-us-title h1,
+.faq-title h1 {
+  color: #636FE9;
+  font-size: 36px;
+}
+
+.about-us-content {
+  display:flex;
+  height: 430px;
+}
+
+.about-us-column {
+  position: relative;
+}
+
+.about-us-column:not(.expanded) {
+  width: 170px;
+  flex-shrink: 0;
+}
+
+.about-us-column.expanded .inner-element p {
+  max-width: 438px;
+}
+
+.about-us-column.expanded {
+  width: 100%;
+}
+
+.about-us-column .inner-element,
+.about-us-column.expanded .cover {
+  display: none;
+}
+
+.about-us-column.expanded .inner-element,
+.about-us-column .cover {
+  display: block;
+}
+
+.about-us-column {
+  transition: width .3s linear;
+}
+
+.about-us-content {
+  overflow: hidden;
+}
+
+.about-us-column.expanded::after {
+  content: "";
+  background: rgb(0,0,0);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+.about-us-column .inner-element {
+  z-index: 2;
+  position: relative;
+  left: 0;
+  width: 100%;
+}
+
+.about-us-column .cover {
+  cursor: pointer;
+}
+
+.about-us-column:nth-child(1) {
+  background-image: url("./../img/trading.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us-column:nth-child(2) {
+  background-image: url("./../img/bitcoin.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us-column:nth-child(3) {
+  background-image: url("./../img/crystal.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us-column:nth-child(4) {
+  background-image: url("./../img/box.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/* FAQ */
+.faq-desc {
+  max-width: 380px;
+}
+
+.faq-item-header {
+  font-size: 26px;
+}
+
+.faq-item-arrow.active i::before {
+  transform: rotate(180deg);
+}
+
+.faq-item-arrow i::before {
+  transition: transform .5s ease;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+}
+
+/* CTA */
+.cta-content {
+  background: linear-gradient(101.81deg, #4D3BA1 0%, #0E0316 100%);
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.cta-content-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.cta-content-desc {
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+/* Privacy Policy */
+.privacy-policy-title {
+  padding-top: 120px;
+  padding-bottom: 74px;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 576px) {
+  .banner-title h1 {
+    font-size: 42px;
+  }
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+
+  .banner-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .banner-desc {
+    width: 100%;
+  }
+
+  .divider-first {
+    height: 60px;
+    width: 109vw;
+    transform: rotate(22.5deg) skew(22.5deg);
+  }
+
+  .divider-first > div{
+    transform: skew(-22.5deg);
+  }
+
+  .divider-second {
+    height: 60px;
+    width: 109vw;
+    transform: rotate(-22.5deg) skew(-22.5deg);
+  }
+
+  .divider-second > div{
+    transform: skew(22.5deg);
+  }
+
+  .faq-title h1 { 
+    font-size: 22px;
+  }
+
+  .cta-content-title {
+    font-size: 27px;
+  }
+
+  .cta-content-desc {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-desc {
+    width: 100%;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-us-column:not(.expanded) {
+    width: 100%;
+  }
+
+  .banner-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
