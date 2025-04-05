@@ -22,7 +22,7 @@ ul li {
   width: 600px;
   height: 600px;
   background: linear-gradient(204.29deg, rgba(72, 39, 97, 0.5) 85.04%, rgba(72, 39, 97, 0.5) 85.04%);
-  backdrop-filter: blur(362.8999938964844px);
+  filter: blur(15px);
   border-radius: 50%;
   position: absolute;
   z-index: 1;
