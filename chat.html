@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Crypto MM - Chat</title>
+
+  <link rel="icon" href="./assets/img/logo.png">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="chat-wrapper">
+  <nav class="navbar navbar-dark navbar-expand-lg bg-transparent py-2 py-lg-0 mb-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/logo.png" width="60" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex flex-grow-1 flex-lg-row flex-column">
+          <ul class="navbar-nav ms-0 gap-lg-5 ms-lg-auto flex-lg-row flex-column mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link active py-3 px-0 text-white text-uppercase" aria-current="page" href="./#about-us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-3 px-0 text-white text-uppercase" aria-current="page" href="./#deal">Deal</a>
+            </li>
+          </ul>
+          <div class="d-flex ms-lg-auto ms-0 gap-2 justify-content-center">
+            <a href="#" class="btn bg-dark text-white px-4 py-2 rounded-pill align-self-center text-uppercase border-semidark navbar-btn" style="--bs-bg-opacity: .5;" type="submit">Login</a>
+            <a href="#" class="btn bg-dark text-white px-4 py-2 rounded-pill align-self-center text-uppercase border-semidark navbar-btn"  style="--bs-bg-opacity: .5;" type="submit">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="d-none d-lg-block ornament-circle-lg"></div>
+  <section class="chat">
+    <div class="container">
+      <div class="chat-header">
+        <h1 class="chat-header title text-white">Welcome name!</h1>
+        <p class="chat-header-desc">lorem ipsum for description text lorem ipsum for description text lorem ipsum for description text lorem ipsum for description text</p>
+      </div>
+      <div class="chat-content d-flex flex-column gap-5">
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble">
+            <p class="mb-0">Please confirm your role to begin?</p>
+          </div>
+          <div class="choice d-flex gap-2 mt-2">
+            <div class="selector-item">
+              <input type="radio" id="radio1" name="selector" class="selector-item_radio">
+              <label for="radio1" class="selector-item_label">Buyer</label>
+            </div>
+            <div class="selector-item">
+              <input type="radio" id="radio2" name="selector" class="selector-item_radio">
+              <label for="radio2" class="selector-item_label">Seller</label>
+            </div>
+          </div>
+        </div>
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble flex-shrink-0 w-100" style="max-width: 424px;">
+            <div style="max-width: 424px;">
+              <div class="row">
+                <div class="col-6 text-center">
+                  <p class="mb-0">Seller ID</p>
+                  <span class="text-purple">ID28cb39xn</span>
+                </div>
+                <div class="col-6 text-center">
+                  <p class="mb-0">Buyer ID</p>
+                  <span class="text-purple">ID28cb39xn</span>
+                </div>
+                <div class="col-12">
+                  <p class="mb-0 mt-4">Amount</p>
+                  <p class="fw-light mb">Please Enter the deal Amount</p>
+                  <input type="number" class="form-control bg-transparent text-white mb-2 shadow-none">
+                  <button class="px-3 py-2 rounded border-0 bg-purple me-2 text-white">Confirm</button>
+                  <button class="px-3 py-2 rounded border-0 bg-purple text-white">Reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble">
+            <p class="mb-0">User1 Chosed to deal $100.00 USD</p>
+          </div>
+        </div>
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble">
+            <p class="mb-0">Please choose payment method?</p>
+          </div>
+          <div class="choice d-flex gap-2 mt-2">
+            <div class="selector-item">
+              <input type="radio" id="usdt" name="selector" class="selector-item_radio">
+              <label for="usdt" class="selector-item_label">USDT</label>
+            </div>
+            <div class="selector-item">
+              <input type="radio" id="litecoin" name="selector" class="selector-item_radio">
+              <label for="litecoin" class="selector-item_label">Litecoin</label>
+            </div>
+            <div class="selector-item">
+              <input type="radio" id="bitcoin" name="selector" class="selector-item_radio">
+              <label for="bitcoin" class="selector-item_label">Bitcoin</label>
+            </div>
+            <div class="selector-item">
+              <input type="radio" id="solana" name="selector" class="selector-item_radio">
+              <label for="solana" class="selector-item_label">Solana</label>
+            </div>
+          </div>
+        </div>
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble flex-shrink-0 w-100" style="max-width: 424px;">
+            <div style="max-width: 424px;">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0">Deal Amount</p>
+                  <span class="text-purple">$ 100 USDT</span>
+                </div>
+                <div class="col-12 text-center">
+                  <p class="mb-0 mt-4">Confirm</p>
+                  <p class="fw-light mb-0">Please confirm this amount</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="choice d-flex gap-2 mt-2">
+            <div class="selector-item">
+              <input type="radio" id="confirmAmount" name="selector" class="selector-item_radio">
+              <label for="confirmAmount" class="selector-item_label">Confirm</label>
+            </div>
+            <div class="selector-item">
+              <input type="radio" id="resetAmount" name="selector" class="selector-item_radio">
+              <label for="resetAmount" class="selector-item_label">Reset</label>
+            </div>
+          </div>
+        </div>
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble flex-shrink-0 w-100" style="max-width: 424px;">
+            <div style="max-width: 424px;">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0">Payment address</p>
+                  <div class="d-flex gap-3 justify-content-center mb-2">
+                    <span class="text-purple">TGU4hDK1yJb4pU3qL5XYY13qL5XYY1</span>
+                    <button class="btn p-0 border-0 bg-transparent">
+                      <img src="./assets/img/copy.svg" alt="">
+                    </button>
+                  </div>
+                  <img src="./assets/img/qr-code.jpg" alt="" class="img-fluid" width="150">
+                </div>
+                <div class="col-12 text-center">
+                  <p class="mb-0 mt-4">Payment</p>
+                  <p class="fw-light mb-0">Please send the payment to the address</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble">
+            <div class="d-flex gap-2 align-items-center">
+              <div class="loader me-3 ms-2"></div>
+              <p class="mb-0">Awaiting Transaction</p>
+            </div>
+          </div>
+        </div>
+        <div div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble">
+            <p class="mb-0">Choose for next step transactions!</p>
+          </div>
+          <div class="choice d-flex gap-2 mt-2">
+            <div class="selector-item">
+              <input type="radio" id="support" name="selector" class="selector-item_radio">
+              <label for="support" class="selector-item_label">Support</label>
+            </div>
+            <div class="selector-item">
+              <input type="radio" id="release" name="selector" class="selector-item_radio">
+              <label for="release" class="selector-item_label">Release</label>
+            </div>
+          </div>
+        </div>
+        <div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble flex-shrink-0 w-100" style="max-width: 424px;">
+            <div style="max-width: 424px;">
+              <div class="row">
+                <div class="col-12">
+                  <p class="mb-0">Payment Address</p>
+                  <p class="fw-light mb-0">Please send the payment to the address!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message seller">
+          <div class="d-flex gap-2">
+            <img src="./assets/img/user.png" alt="" width="40" height="40">
+            <div class="d-flex flex-column">
+              <p class="mb-2 text-white">Seller</p>
+              <div class="bubble">
+                <p class="mb-0">TGU4hDK1yJb4pU3qL5XYY1D9...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble">
+            <p class="mb-0">🔒   Address format valid for USDT (TRC20)</p>
+          </div>
+        </div>
+        <div div class="message bot">
+          <div class="d-flex align-items-center gap-2">
+            <img src="./assets/img/logo.png" alt="" width="40" height="40">
+            <span class="text-purple d-block mt-1">MCM Bot</span>
+          </div>
+          <div class="bubble">
+            <div class="d-flex gap-2 align-items-center">
+              <img src="./assets/img/check.svg" alt="" class="img-fluid">
+              <p class="mb-0">Transactions Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-form bg-black p-3 fixed-bottom">
+        <div class="container">
+          <div class="d-flex">
+            <input type="text" class="form-control chat-input text-white border-0 shadow-none bg-transparent" placeholder="Type messages here">
+            <button class="px-3 py-2 rounded border-0 bg-purple text-white">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
