@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Crypto MM</title>
+
+  <link rel="icon" href="./assets/img/logo.png">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <section id="deal" class="banner vh-100">
+    <div class="container">
+      <div class="banner-content">
+        <form action="#" id="signup-form">
+          <div class="login-card p-5">
+            <div class="text-center">
+              <img src="./assets/img/logo.png" width="60" class="mx-auto mb-3" alt="">
+              <h3 class="text-white fw-semibold">Register</h3>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-white">Username</label>
+              <input type="text" placeholder="Username" class="input-username form-control bg-white py-2 rounded-pill shadow-none border-white text-white" style="--bs-bg-opacity: 0.15" id="signup-username" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-white">Password</label>
+              <input type="password" placeholder="Password" class="input-password form-control bg-white py-2 rounded-pill shadow-none border-white text-white" style="--bs-bg-opacity: 0.15" id="signup-password" aria-describedby="emailHelp">
+            </div>
+            <div class="mt-4">
+              <button type="submit" class="bg-purple border-0 py-2 text-white w-100 rounded-pill">Register</button>
+            </div>
+            <p class="fw-light mt-4 text-center mb-0 text-semidark">Have an account? <a href="./login.html" class="text-purple text-decoration-none fw-semibold">Login Now</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script>
+     // Inscription
+     document.getElementById('signup-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const username = document.getElementById('signup-username').value;
+      const password = document.getElementById('signup-password').value;
+      const res = await fetch('/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+      const data = await res.json();
+      if (data.error) {
+        alert("Erreur : " + data.error);
+      } else {
+        alert("Inscription réussie ! Vous pouvez maintenant vous connecter.");
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -401,6 +401,21 @@ section.chat {
   z-index: 2;
 }
 
+/* Login */
+.login-card {
+  max-width: 495px;
+  background-color: rgba(36, 35, 35, 0.3);
+  margin: auto;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+}
+
+.input-username::placeholder,
+.input-password::placeholder {
+  color: #A4A4A4;
+}
+
 @media screen and (max-width: 576px) {
   .banner-title h1 {
     font-size: 42px;

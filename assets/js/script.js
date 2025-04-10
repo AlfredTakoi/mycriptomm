@@ -18,5 +18,9 @@ $(document).ready(function() {
     $(this).closest(".faq-item").removeClass("border border-semidark");
     $(".faq-item-arrow").removeClass("active bg-purple");
     $(this).closest(".faq-item").find(".faq-item-arrow").toggleClass("bg-purple active");
+    if($(this).hasClass("collapsed")) {
+      $(this).closest(".faq-item").addClass("border border-semidark");
+      $(this).closest(".faq-item").find(".faq-item-arrow").toggleClass("bg-purple active");
+    }
   })
 })
